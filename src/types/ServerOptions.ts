@@ -40,6 +40,20 @@ export interface ServerOptions {
   };
   createOptions: {
     browserArgs: string[];
+    useChrome?: boolean;
+    puppeteerOptions?: {
+      userDataDir?: string;
+      args?: string[];
+      executablePath?: string;
+      headless?: boolean | 'new';
+      defaultViewport?: {
+        width?: number;
+        height?: number;
+        deviceScaleFactor?: number;
+        isMobile?: boolean;
+        hasTouch?: boolean;
+      } | null;
+    };
   };
   mapper: {
     enable: boolean;
