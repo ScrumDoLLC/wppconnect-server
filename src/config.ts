@@ -1,7 +1,8 @@
-import { ServerOptions } from './types/ServerOptions';
+import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import dotenv from 'dotenv';
+
+import { ServerOptions } from './types/ServerOptions';
 
 // Load environment variables from .env file
 dotenv.config();
